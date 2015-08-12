@@ -33,3 +33,13 @@ print(url)
 a = os.execute("./upload.sh " .. FILENAME .. " \"" .. url .. "\"")
 
 -- get last asset id from assetid.last file
+
+file = io.open("./assetid.last", "r")
+if file then
+	local str = file:read("*a")
+	if str then
+		print("Last asset version id: " .. str)
+		os.exit()
+	end
+end
+error("error reading asset file")
