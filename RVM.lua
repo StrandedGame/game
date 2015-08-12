@@ -15,4 +15,9 @@ function RVM:Upload(Mode, FileName, ...)
 	upload(Mode, FileName, ...)
 end
 
+function RVM:GenerateCommitLog(ofile)
+	local ofile = ofile or 'commits.log'
+	os.execute('git log --pretty=oneline --abbrev-commit > ' .. ofile)
+end
+
 return RVM
