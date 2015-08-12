@@ -21,4 +21,4 @@ CURLBASESTR="curl -v -A Roblox/Darwin -H \"Requester: Client\" -b ~/.curlcookies
 CURL_TSTR=$CURLBASESTR$2
 
 ASSETID=$(eval $CURL_TSTR)
-echo $ASSETID >> assetid.last
+echo $ASSETID > assetid.last
