@@ -1,0 +1,4 @@
+[submodule "documentation"]
+	path = documentation
+	url = git@github.com:StrandedGame/strandedgame.github.io.git
+	branch = master
