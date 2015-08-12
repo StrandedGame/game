@@ -2,3 +2,6 @@
 	path = documentation
 	url = git@github.com:StrandedGame/strandedgame.github.io.git
 	branch = master
+[submodule "DirToRBXM"]
+	path = DirToRBXM
+	url = git@github.com:jobro13/DirToRBXM
